@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+}
+
+
+header {
+    height: 70px;
+    background-color: #131921;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 15px;
+    gap: 15px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.location_box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+
+    min-width: 180px;
+
+    flex-shrink: 0;
+}
+
+.location_box div {
+    font-size: 12px;
+
+    line-height: 1.2;
+}
+
+.location_box div > div {
+    display: block;
+}
+
+.location_box i {
+    font-size: 22px;
+    color: white;
+    margin-right: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location_box img {
+    width: 17px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.dropdown_box {
+    display: flex;
+    align-items: center;
+
+    height: 45px;
+
+    flex: 1;
+}
+
+.dropdown_box select {
+    height: 45px;
+    width: 70px;
+
+    border: none;
+    background-color: #e6e6e6;
+}
+
+.dropdown_box input {
+    height: 45px;
+
+    flex: 1;
+
+    border: none;
+
+    padding: 10px;
+
+    font-size: 14px;
+}
+
+.magnifying_icon {
+    height: 45px;
+    width: 50px;
+
+    background-color: #febd69;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.language_dropdown {
+    background-color: transparent;
+    color: white;
+
+    border: none;
+
+    font-weight: bold;
+}
+
+
+.account_section {
+    color: white;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+/* Orders */
+
+.orders_section {
+    color: white;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+.cart_box {
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    gap: 5px;
+}
+
+.cart_count {
+    color: #ff9900;
+}
+
+.cart_text {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    font-size: 18px;
+}
+
+.user_menu_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    color: white;
+}
+
+.user_menu_header .account_name {
+    font-size: 18px;
+    font-weight: 700;
+}

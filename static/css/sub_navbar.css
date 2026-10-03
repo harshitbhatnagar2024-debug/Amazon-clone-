@@ -1,0 +1,168 @@
+.sidebar_wrapper {
+    position: relative;
+}
+
+.hamburger_content_box {
+    position: fixed;
+    top: 75px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 14px;
+    z-index: 500;
+    transition: background 0.2s ease;
+}
+
+.hamburger_content_box:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.amazon_user_panel {
+    position: fixed;
+    top: 0;
+    left: -380px;
+    width: 370px;
+    height: 100vh;
+    background: #fff;
+    z-index: 1100;
+    transition: left 0.25s ease;
+    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+
+.amazon_user_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 22px;
+    background: #232f3e;
+    color: white;
+    min-height: 75px;
+}
+
+.hello_user_box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hello_user_box h2 {
+    margin: 0;
+}
+
+.user_badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.amazon_user_header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.menu_group {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu_group h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 8px;
+    padding: 0 22px;
+    line-height: 1.2;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 22px;
+    font-size: 15px;
+    color: #111;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.menu_item:hover {
+    background: #f0f0f0;
+}
+
+.menu_item i {
+    color: #8c8c8c;
+    font-size: 16px;
+}
+
+.close_button {
+    position: static;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.close_button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.icon_box_sign_in {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .amazon_user_panel {
+        width: 85vw;
+    }
+
+    .amazon_user_header h2 {
+        font-size: 18px;
+    }
+
+    .menu_group h3 {
+        font-size: 16px;
+    }
+
+    .menu_item {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Sign_in_box {
+        width: 300px;
+    }
+}
