@@ -1,42 +1,10 @@
-{% load static %}
+<nav class="amazon_sub_navbar" aria-label="Main navigation">
+    <button class="hamburger_content_box" type="button" onclick="show_side_bar()">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span>All</span>
+    </button>
 
-<head>
-    <link rel="stylesheet" href="{% static 'css/sub_navbar.css' %}">
-</head>
-
-<body>
-
-    <div>
-        <header class="container">
-
-            <div class="hamburger_content_box" onclick="show_side_bar()">
-                <i class="fa-solid fa-bars"></i>
-                <p>All</p>
-            </div>
-
-           
-            <div class="Sign_in_box">
-
-                <div class="sidebar_top">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <b>Hello, User</b>
-                </div>
-
-                <h3>Trending</h3>
-                <p>Bestsellers</p>
-                <p>New Releases</p>
-
-            </div>
-
-            <!-- Close button outside sidebar -->
-            <div class="close_button" onclick="hide_side_bar()">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-
-        </header>
-    </div>
-
-    <script src="{% static 'js/sidebar.js' %}"></script>
-
-</body>
-</html>
+    {% for item in sub_navbar_items %}
+        <a class="sub_navbar_link" href="#">{{ item }}</a>
+    {% endfor %}
+</nav>

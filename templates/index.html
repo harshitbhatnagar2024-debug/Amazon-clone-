@@ -7,18 +7,16 @@
     <title>Amazon Replica</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/sub_navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     {% include 'navbar.html' %}
+    {% include 'sub_navbar.html' %}
 
-    <!-- Sidebar Panel -->
-    <div class="sidebar_wrapper">
-        <button class="hamburger_content_box" onclick="show_side_bar()">
-            <i class="fa-solid fa-bars"></i>
-            <p>All</p>
-        </button>
-
+    <main>
+        <!-- Sidebar Panel -->
+        <div class="sidebar_wrapper">
         <aside class="amazon_user_panel">
             <div class="amazon_user_header">
                 <div class="hello_user_box">
@@ -50,5 +48,8 @@
     </div>
 
     <script src="{% static 'js/sidebar.js' %}"></script>
+    </main>
+
+    {% include 'footer.html' %}
 </body>
 </html>

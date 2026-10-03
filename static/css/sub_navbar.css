@@ -2,27 +2,54 @@
     position: relative;
 }
 
+.amazon_sub_navbar {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: #232f3e;
+    color: #fff;
+    justify-content: space-between;
+}
+
 .hamburger_content_box {
-    position: fixed;
-    top: 75px;
-    left: 15px;
     display: flex;
     align-items: center;
     gap: 8px;
     color: white;
     font-weight: 700;
     cursor: pointer;
-    padding: 10px 14px;
+    padding: 8px 10px;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
+    background: transparent;
+    border: 1px solid transparent;
     font-size: 14px;
-    z-index: 500;
+    flex: 0 0 auto;
     transition: background 0.2s ease;
 }
 
 .hamburger_content_box:hover {
-    background: rgba(0, 0, 0, 0.2);
+    border-color: #fff;
+}
+
+.sub_navbar_link {
+    display: block;
+    flex: 0 0 auto;
+    padding: 9px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.sub_navbar_link:hover {
+    border-color: #fff;
 }
 
 .amazon_user_panel {
@@ -30,12 +57,12 @@
     top: 0;
     left: -380px;
     width: 370px;
-    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
     background: #fff;
     z-index: 1100;
     transition: left 0.25s ease;
     box-shadow: 6px 0 20px rgba(0, 0, 0, 0.15);
-    overflow-y: auto;
     padding-bottom: 30px;
 }
 

@@ -50,3 +50,13 @@ sidebar_data = [
         ]
     },
 ]
+
+sub_navbar_items = [
+    "Fresh",
+    "Today's Deals",
+    "Keep Shopping for",
+    "AmazonBasics",
+    "Prime Video",
+    "Sell",
+    "Gift Cards",
+]
