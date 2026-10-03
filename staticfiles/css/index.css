@@ -7,9 +7,17 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Navbar */
+main {
+    flex: 1 0 auto;
+    min-height: calc(100vh - 120px);
+    background-color: #fff;
+}
+
 
 header {
     height: 70px;
@@ -22,13 +30,9 @@ header {
     gap: 15px;
 }
 
-/* Logo */
-
 .logo img {
     width: 100px;
 }
-
-/* Location */
 
 .location_box {
     display: flex;
@@ -36,10 +40,29 @@ header {
     gap: 8px;
 
     color: white;
+
+    min-width: 180px;
+
+    flex-shrink: 0;
 }
 
 .location_box div {
     font-size: 12px;
+
+    line-height: 1.2;
+}
+
+.location_box div > div {
+    display: block;
+}
+
+.location_box i {
+    font-size: 22px;
+    color: white;
+    margin-right: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .location_box img {
@@ -47,9 +70,6 @@ header {
     height: 25px;
     margin-right: 5px;
 }
-
-
-/* Search */
 
 .dropdown_box {
     display: flex;
@@ -91,7 +111,6 @@ header {
     justify-content: center;
 }
 
-/* Language */
 
 .language_dropdown {
     background-color: transparent;
@@ -102,7 +121,6 @@ header {
     font-weight: bold;
 }
 
-/* Account */
 
 .account_section {
     color: white;
@@ -121,8 +139,6 @@ header {
 
     white-space: nowrap;
 }
-
-/* Cart */
 
 .cart_box {
     display: flex;
